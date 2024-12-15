@@ -1,11 +1,16 @@
 import React from 'react';
-import Form from './Form';      // Updated Form.jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Encrypt from './Encrypt';
+import Decrypt from './Decrypt';
 
 const App = () => {
     return (
-        <div className="container mt-5">
-            <Form />
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Encrypt />} />
+                <Route path="/decrypt" element={<Decrypt />} />
+            </Routes>
+        </Router>
     );
 };
 
