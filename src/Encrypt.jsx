@@ -47,7 +47,7 @@ const Encrypt = () => {
                         <h5>Encrypted Text:</h5>
                         {encryptedText || 'Your encrypted text will appear here.'}
                     </div>
-                    <Link to="/decrypt" className="btn btn-secondary mt-3">Go to Decryption</Link>
+                    <Link to="/decrypt" className="btn btn-success mt-3">Go to Decryption</Link>
                 </div>
             </div>
         </div>
