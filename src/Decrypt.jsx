@@ -41,8 +41,8 @@ const Decrypt = () => {
                         />
                     </div>
                     <div className="d-flex justify-content-around mb-3">
-                        <button className="btn btn-secondary" onClick={handleUploadImage}>Upload Image</button>
-                        <button className="btn btn-secondary" onClick={handleDecrypt}>Decrypt</button>
+                        <button className="btn btn-primary" onClick={handleUploadImage}>Upload Image</button>
+                        <button className="btn btn-primary" onClick={handleDecrypt}>Decrypt</button>
                     </div>
                     <div className="bg-light p-3 rounded">
                         <h5>Decrypted Text:</h5>
