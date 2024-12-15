@@ -40,15 +40,21 @@ const Decrypt = () => {
                             placeholder="Enter cipher text"
                         />
                     </div>
-                    <div className="d-flex justify-content-around mb-3">
-                        <button className="btn btn-primary" onClick={handleUploadImage}>Upload Image</button>
-                        <button className="btn btn-primary" onClick={handleDecrypt}>Decrypt</button>
+                    <div className="d-flex flex-column align-items-center mb-3">
+                    {/* Encrypt Button */}
+                    <button className="btn btn-primary mb-2">Decrypt</button>
+
+                        {/* Secondary Buttons */}
+                        <div className="d-flex justify-content-center gap-2">
+                        <button className="btn btn-primary">Download Image</button>
+                        <button className="btn btn-primary">Upload Image</button>
+                        </div>
                     </div>
                     <div className="bg-light p-3 rounded">
                         <h5>Decrypted Text:</h5>
                         {decryptedText || 'Your decrypted text will appear here.'}
                     </div>
-                    <Link to="/" className="btn btn-secondary mt-3">Go to Encryption</Link>
+                    <Link to="/" className="btn btn-success mt-3">Go to Encryption</Link>
                 </div>
             </div>
         </div>
