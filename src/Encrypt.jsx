@@ -32,10 +32,17 @@ const Encrypt = () => {
                             placeholder="Enter text"
                         />
                     </div>
-                    <div className="d-flex justify-content-around mb-3">
-                        <button className="btn btn-primary" onClick={handleEncrypt}>Encrypt</button>
-                        <button className="btn btn-primary" onClick={() => alert('Download Image')}>Download Image</button>
+                    <div className="d-flex flex-column align-items-center mb-3">
+                    {/* Encrypt Button */}
+                    <button className="btn btn-primary mb-2">Encrypt</button>
+
+                        {/* Secondary Buttons */}
+                        <div className="d-flex justify-content-center gap-2">
+                        <button className="btn btn-primary">Download Image</button>
+                        <button className="btn btn-primary">Upload Image</button>
+                        </div>
                     </div>
+
                     <div className="bg-light p-3 rounded">
                         <h5>Encrypted Text:</h5>
                         {encryptedText || 'Your encrypted text will appear here.'}
